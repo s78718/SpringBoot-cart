@@ -2,12 +2,13 @@ package com.springboot.cart.controller;
 import com.springboot.cart.model.MemberAccount;
 import com.springboot.cart.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class MemberController {
 
     //透過 @RequestMapping 指定從/add會被對應到此add()方法
